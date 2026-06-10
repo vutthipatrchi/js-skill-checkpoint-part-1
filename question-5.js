@@ -31,4 +31,5 @@ function calculateTotalPrice(products,promotionCode){
   return products.price*products.quantity;
 }
 
-console.log(calculateTotalPrice(products[0],""));
+console.log(calculateTotalPrice(products[0],"SALE50"));
+// คิดว่าน่าจะต้องมีการใช้for เข้ามาร่วมด้วย ภายใต้function เพื่อมันวนแล้วรวมผลทุกตัว แต่ไม่รู้จะเอาไปใส่ยังไงครับ
