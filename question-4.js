@@ -5,3 +5,10 @@ const inventory = [
   { name: "Orange", price: 30, quantity: 60 },
 ];
 // เริ่มเขียนโค้ดตรงนี้
+
+for(let num of inventory){
+  console.log(num.price)
+
+}
+
+

@@ -6,3 +6,8 @@ const myTodo = [
   { id: 4, todo: "Wash dishes" },
 ];
 // เริ่มเขียนโค้ดตรงนี้
+myTodo.push(`id: 5, todo: "Walk the dog"`)
+myTodo[3]= `id: 4, todo: "Go to the gym"`
+delete myTodo[4]
+console.log(`To-do ${myTodo[3]}`)
+//"To-do id: <ค่าของ id>, <ค่าของ todo>"
