@@ -23,18 +23,17 @@ const promotionCode = "";
 function calculateTotalPrice(products,promotionCode){
   let totalPrice = 0;
   for(let num of products){
+
     totalPrice += num.price * num.quantity
-  }
-  return totalPrice
-  if(promotionCode === "SALE20"){
-    return (products.price*products.quantity)*0.80
+  }  if(promotionCode === "SALE20"){
+    return (totalPrice)*0.80
   } else if(promotionCode === "SALE50"){
-    return (products.price*products.quantity)*0.50
+    return (totalPrice)*0.50
   } else{
     return "ไม่ได้รับส่วนลด"
   }
   return totalPrice;
 }
 
-console.log(calculateTotalPrice(products,"SALE50"));
+console.log(calculateTotalPrice(products," "));
 // คิดว่าน่าจะต้องมีการใช้for เข้ามาร่วมด้วย ภายใต้function เพื่อมันวนแล้วรวมผลทุกตัว แต่ไม่รู้จะเอาไปใส่ยังไงครับ
