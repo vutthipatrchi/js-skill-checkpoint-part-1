@@ -2,7 +2,7 @@
 let userPassword = "";
 // เริ่มเขียนโค้ดตรงนี้
 function checkPasswordStrength(userPassword){
-let num=userPassword
+let num=userPassword.length;
 if(num <6){
     return "Weak";
 }else if(num >=6 && num <=10){
